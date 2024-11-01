@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OncheApi"
+version = "0.4.0"
+description = "Package de requete."
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = ["database", "mysql", "management", "api", "GUI"]
+
+authors = [
+    {name = "Recitasse"}
+]
+
+urls = { "Homepage" = "https://github.com/Recitasse/OncheAPI" }
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License"
+]
+
+dependencies = [
+    "blinker==1.8.2",
+    "click==8.1.7",
+    "Flask==3.0.3",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.4",
+    "MarkupSafe==3.0.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "isort"
+]
+
+[tool.setuptools]
+packages = ["OncheAPI"]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.package-data]
+"OncheDatabase" = [
+    "data/inputs/*",
+    "data/outputs/*",
+    "data/reports/*"
+]
