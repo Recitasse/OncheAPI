@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel Onche</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon/main.ico') }}" type="image/x-icon">
+</head>
+<body>
+
+    <div class="top_enca">
+            <div class="main_titre">
+                <h1>BABEL <img src="{{ url_for('static', filename='images/icon/main.ico') }}" alt="logo">NCHE</h1>
+            </div>
+        <div class="menu">
+            <nav>
+                <ul class="horizontal-menu">
+                    <li>
+                        <a href="#">Queries</a>
+                        <ul class="submenu">
+                            <li><a href="#">Prédéfinie</a></li>
+                            <li><a href="#">Manuelle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Topics</a>
+                        <ul class="submenu">
+                            <li><a href="#">Recherche 🔍</a></li>
+                            <li><a href="#">Boucle 🔂</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="#">Onchois <img src="{{ url_for('static', filename='images/icon/onche.png') }}" alt="" style="vertical-align: middle;width: 20px; height: 20px;"></a>
+                    <ul class="submenu">
+                        <li><a href="#">Recherche 🔍</a></li>
+                        <li><a href="#">Constellation 🕸️</a></li>
+                        <li><a href="#">Communautés 🌐</a></li>
+                        <li><a href="#">Réplicant 🤖</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">Paramètres ⚙️</a>
+                        <ul class="submenu">
+                            <li><a href="{{ url_for('link_controller.homepage') }}">Connexion 📶</a></li>
+                            <li><a href="{{ url_for('link_controller.database') }}">Base de donnée 💾</a></li>
+                            <li><a href="{{ url_for('link_controller.information') }}">Informations ℹ️</a></li>
+                            <li><a href="{{ url_for('link_controller.connexion') }}">Aide ♿</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+<div class="page">
+    <div class="babel">
+        <div class="babel_titre">
+            <p class="terminal"><img src="{{ url_for('static', filename='images/icon/main.ico') }}" alt="icone" style="height: 2.5em; vertical-align: middle;"> Terminal de la base de donnée <b>SERVER</b></p>
+        </div>
+        <div class="files">
+        </div>
+    </div>
+    <p><i>Expérimental (version >= 0.9.1) base de donnée locale avec sqlite</i></p>
+    <div class="babel">
+        <div class="babel_titre">
+            <p class="terminal"><img src="{{ url_for('static', filename='images/icon/main.ico') }}" alt="icone" style="height: 2.5em; vertical-align: middle;"> Terminal de la base de donnée <b>LOCALE</b></p>
+        </div>
+        <div class="files">
+        </div>
+    </div>
+</div>
+</body>
+</html>
