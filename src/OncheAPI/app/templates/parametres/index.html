@@ -41,10 +41,10 @@
                     <li>
                         <a href="#">Paramètres ⚙️</a>
                         <ul class="submenu">
-                            <li><a href="/connexion">Connexion 📶</a></li>
+                            <li><a href="{{ url_for('link_controller.connexion') }}">Connexion 📶</a></li>
                             <li><a href="{{ url_for('link_controller.database') }}">Base de donnée 💾</a></li>
-                            <li><a href="/informations">Informations ℹ️</a></li>
-                            <li><a href="/aide">Aide ♿</a></li>
+                            <li><a href="{{ url_for('link_controller.information') }}">Informations ℹ️</a></li>
+                            <li><a href="{{ url_for('link_controller.aide') }}">Aide ♿</a></li>
                         </ul>
                     </li>
                 </ul>

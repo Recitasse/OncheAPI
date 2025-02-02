@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babel Onche</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon/main.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="top_enca">
+        <div class="main_titre">
+            <h1>BABEL <img src="{{ url_for('static', filename='images/icon/main.ico') }}" alt="logo">NCHE</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="horizontal-menu">
+                    <li>
+                        <a href="#">Queries</a>
+                        <ul class="submenu">
+                            <li><a href="#">Prédéfinie</a></li>
+                            <li><a href="#">Manuelle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Topics</a>
+                        <ul class="submenu">
+                            <li><a href="#">Recherche 🔍</a></li>
+                            <li><a href="#">Boucle 🔂</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Onchois <img src="{{ url_for('static', filename='images/icon/onche.png') }}" alt="" style="vertical-align: middle;width: 20px; height: 20px;"></a>
+                        <ul class="submenu">
+                            <li><a href="#">Recherche 🔍</a></li>
+                            <li><a href="#">Constellation 🕸️</a></li>
+                            <li><a href="#">Communautés 🌐</a></li>
+                            <li><a href="#">Réplicant 🤖</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Paramètres ⚙️</a>
+                        <ul class="submenu">
+                            <li><a href="{{ url_for('link_controller.connexion') }}">Connexion 📶</a></li>
+                            <li><a href="{{ url_for('link_controller.database') }}">Base de donnée 💾</a></li>
+                            <li><a href="{{ url_for('link_controller.information') }}">Informations ℹ️</a></li>
+                            <li><a href="{{ url_for('link_controller.aide') }}">Aide ♿</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
